@@ -1,0 +1,165 @@
+
+
+
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+body {
+
+	background: #f0efef;
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 1.4;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+/* MIND blowing... Got this from the solution - Center the container */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+.headerbg {
+	/*I'm having a lot of trouble with relative paths. Again spend way too much time on this and still had to look at the solution. Also, why use the property background and not background-image?*/
+	background: url(../images/header_bg.jpg);
+	color: white;
+	height: 700px; /*from solution*/
+	background-size: cover; /*from solution but doesn't seem to change anything on my code*/
+	padding-top: 32px; /*from solution but doesn't seem to change anything on my code*/
+
+}
+
+.Relaxr {
+	font-weight: 600;
+	font-size: 42px;
+}
+
+
+.slogan {
+	font-weight: 600;
+	font-size: 42px;
+	text-align: center;
+	padding: 100px;
+	color: white;
+}
+
+/*can't get this to center...*/
+.getit {
+	font-weight: 800;
+	font-size: 14px;
+	text-align: center;
+	width: 20%;
+	background: #f9e42e;
+	color: #033048;
+	border-radius: 5px;
+	display: block; /*from solution but doesn't seem to change anything on my code*/
+	margin-bottom: 0 auto;
+}
+
+.button {
+  background: #f9e42e;
+  color: #033048;
+  height: 50px;
+}
+
+.signup { 
+	font-weight: 600;
+	font-size: 12px;
+	border-radius: 5px;
+	background: #033048;
+	text-align: center;
+	display: block;
+	width: 20%;
+	margin: 0 auto;
+	color: white;
+ }
+
+.Benefits {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.perfectpa {
+	font-weight: lighter;
+	font-size: 13px;
+	padding: 20px;
+}
+
+.quote {
+	background: url(../images/testimonial_bg.jpg);
+	color: white;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
+	text-align: center;
+	padding: 80px;
+	display: block;
+	margin: 0 auto;
+}
+
+.quote p {
+	color: white;
+	font-size: 18px
+	font-weight: 600;
+	font-style: normal;
+	text-align: center;
+	display: block;
+}
+
+.PageFoot {
+	background: #121212
+}
+
+.LogoFooter {
+	font-weight: 800;
+	font-size: 42px;
+	color: #f9e42e;
+	text-align: center;
+}
+
+.icons {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    clear: both;
+    text-align: center; 
+}
+
+/*does't seem like this copyright class code is applying*/
+.copyright {
+	font-weight: 600;
+	font-size: 9px;
+	text-align: center;
+	color: white;
+}
+
+
+/*
+li a {
+    display: block;
+    float: left;
+    clear: both;
+}
+*/
